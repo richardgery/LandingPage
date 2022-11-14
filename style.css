@@ -77,7 +77,7 @@ body {
     text-align: center;
     align-items: center;
   }
-  li {
+  nav li {
     padding-bottom: 3px;
   }
 }
@@ -156,5 +156,121 @@ li {
 @media (max-width: 650px) {
   #section {
     margin-top: 118px;
+  }
+}
+
+.contain {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#features {
+  margin-top: 28px;
+}
+
+.grid {
+  display: flex;
+}
+
+#features .icon {
+  display: flex;
+  width: 18vw;
+  height: 123px;
+  align-items: center;
+  justify-content: center;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+#features .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 123px;
+  width: 78vw;
+  padding: 3px;
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+#how-it-works > iframe {
+  max-width: 558px;
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  margin-top: 58px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.models {
+  display: flex;
+  width: calc(100% / 3);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 8px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.models > .type {
+  background-color: #ddd;
+  color: black;
+  padding: 13px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.models > h2 {
+  margin-top: 13px;
+}
+
+.models > ul {
+  margin: 13px 0;
+}
+
+.models > ul > li {
+  padding: 3px 0;
+}
+
+.models > .control {
+  border: 0;
+  margin: 13px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.models > .control:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .models {
+    max-width: 298px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 8px;
   }
 }
